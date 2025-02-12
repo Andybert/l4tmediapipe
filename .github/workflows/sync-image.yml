@@ -26,7 +26,7 @@ jobs:
         run: |
           IMAGE_NAME="mediapipe"
           TAG="l4t35.4.1-py3.8.10-ocv4.8.0-mp0.10.7"
-          NAMESPACE="my-namespace"
+          NAMESPACE="l4tmediapipe"
           docker pull ghcr.io/lanzani/${IMAGE_NAME}:${TAG}
           docker tag ghcr.io/lanzani/${IMAGE_NAME}:${TAG} ccr.ccs.tencentyun.com/${NAMESPACE}/${IMAGE_NAME}:${TAG}
           docker push ccr.ccs.tencentyun.com/${NAMESPACE}/${IMAGE_NAME}:${TAG}
